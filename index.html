@@ -40,6 +40,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   width: 75px;
   height: 60px;
 }
+.read-more:hover {
+  cursor: pointer;
+}
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -93,6 +96,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           warns and informs you about your medical treatment and its risks
           by offering free access to medication data in order to be informed
           of the risks of your treatments and those of your loved ones.
+        </p>
+        <div class="read-more" id="readMore"><p>Read more...</p></div>
+        <p id="medicamentum2">
+          During my first technical internship as a Computer Engineering student, 
+          I had the opportunity to work on this application and collaborate with the team of Beyowi 
+          to implement the brand new version of the application. The mission was a succes and the new version 
+          was deployed on time.
+        </p>
+        <p id="medicamentum3">
+          Moreover, thanks to all the members of the team and hard work, I gained skills in React Native and more confidence.
         </p>
         Team: <a href="https://beyowi.com/en/team#" target="_blank">Beyowi</a>
         <img class="logo" src="react-native.png" alt="react-native" width="100px"/>
@@ -270,7 +283,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 <!-- End page content -->
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script>
+
+  $(document).ready(function(){
+      $("#medicamentum2").hide();
+      $("#medicamentum3").hide();
+  });
+
+  $("#readMore").click(function(){
+    $("#medicamentum2").show();
+    $("#medicamentum3").show();
+    $("#readMore").hide()
+  });
 // Script to open and close sidebar
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
