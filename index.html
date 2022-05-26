@@ -31,6 +31,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     flex-direction: column;
   }
 }
+.logo, .logo-react {
+  position: relative;
+  left: 20px;
+  margin-bottom: 45px;
+}
+.logo-react {
+  width: 75px;
+  height: 60px;
+}
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -73,10 +82,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <!-- MEDICAMENTUM -->
-    <div class="w3-third w3-container w3-margin-bottom project">
-      <!-- <a href="medicamentum.html"> -->
+    <div class="w3-third w3-container w3-margin-bottom project" id="medicamentum">
+      <a href="https://medicamentum.fr/" target="_blank">
         <img src="medicamentum.PNG" alt="Medicamentum" style="width: 100%; height: 100%" class="w3-hover-opacity">
-      <!-- </a> -->
+      </a>
       <div class="w3-container w3-white">
         <p><b>Front-end development for Medicamentum</b></p>
         <p>
@@ -86,6 +95,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           of the risks of your treatments and those of your loved ones.
         </p>
         Team: <a href="https://beyowi.com/en/team#" target="_blank">Beyowi</a>
+        <img class="logo" src="react-native.png" alt="react-native" width="100px"/>
+        <img class="logo" src="ruby-rails.png" alt="ruby-rails" width="100px"/>
       </div>
     </div>
     <!-- EDURELL -->
@@ -101,6 +112,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           Other features have been developed to make learning more enjoyable...
         </p>
         Team: <i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i>
+        <img class="logo-react" src="react.svg.png" alt="react"/>
+        <img class="logo" src="flask.png" alt="flask" width="100px"/>
       </div>
     </div>
     <!-- POKEMON -->
@@ -115,6 +128,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           The objective for this project was to find the optimal team, that is to say, the team that wins all the battles.
         </p>
         Team: <i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i>
+        <img class="logo-react" src="react.svg.png" alt="react"/>
+        <img class="logo" src="go.png" alt="go" width="100px"/>
       </div>
     </div>
   </div>
@@ -142,6 +157,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           and I am currently working to use ReactJS for the front-end 
           and synchronize it with my Spring Boot back-end. 
         </p>
+        Team: <i class="fa fa-user fa-fw"></i>
+        <img class="logo-react" src="react.svg.png" alt="react"/>
+        <img class="logo" src="spring-boot.png" alt="spring-boot" width="100px"/>
       </div>
     </div>
   </div>
@@ -252,7 +270,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 <!-- End page content -->
 </div>
-
 <script>
 // Script to open and close sidebar
 function w3_open() {
