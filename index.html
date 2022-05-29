@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css" rel="stylesheet">
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .technical-skills, .technical-skills-grid {
   display: flex;
@@ -41,6 +42,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 .read-more:hover {
   cursor: pointer;
+  font-weight: bold;
+  transition-duration: 400ms;
+  text-shadow: -1px 1px 2px rgba(0,0,0,0.7);
 }
 </style>
 </head>
@@ -133,7 +137,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <div class="read-more" id="readMoreEdurellFeatures"><p>Show the main features</p></div>
         <div id="edurellFeatures">
           <p>
-            The main features that are available on the platform are:
+            The main features available on the platform are:
             <ul>
               <li>A dashboard with the history of the lessons watched online</li>
               <li>A semantic graph available and animated next to the video to understand better the links between each concepts</li>
@@ -160,6 +164,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <p>
           The arena simulator is an application that allows you to simulate pokemons tournaments. 
           The objective for this project was to find the optimal team, that is to say, the team that wins all the battles.
+        </p>
+        <div class="read-more" id="readMorePokemon"><p>Read more...</p></div>
+        <p id="pokemonDesc">
+          We developped this web application as a team of 4 students. We chose ReactJS for the front-end and Go was mandatory for the back-end. 
+          We organized the team this way: 2 members on the front-end and 2 members on the back-end, with weekly meetings to help each other. 
+          Using our application, it is possible to pick up a team of pokemons (a Pokedex is also available with hundreds of pokemons) and especially 
+          to choose them according to their nature and generation through a research by filter. It is also possible to customise the other arenas. 
+          Once the user has finished his or her tournament configuration, the competion can be launched and the best team will be the winner of all the arenas.
         </p>
         Team: <i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i>
         <img class="logo-react" src="react.svg.png" alt="react"/>
@@ -322,6 +334,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       $("#edurellDesc").hide();
       $("#readMoreEdurellFeatures").hide()
       $("#edurellFeatures").hide();
+      $("#pokemonDesc").hide();
   });
 
   $("#readMoreMedicamentum").click(function(){
@@ -339,6 +352,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   $("#readMoreEdurellFeatures").click(function(){
     $("#edurellFeatures").show();
     $("#readMoreEdurellFeatures").hide()
+  });
+
+  $("#readMorePokemon").click(function(){
+    $("#pokemonDesc").show();
+    $("#readMorePokemon").hide()
   });
 // Script to open and close sidebar
 function w3_open() {
