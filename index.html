@@ -25,7 +25,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     width: 100%;
   }
 }
-
 @media (max-width: 400px) {
   .contacts {
     flex-direction: column;
@@ -98,7 +97,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           by offering free access to medication data in order to be informed
           of the risks of your treatments and those of your loved ones.
         </p>
-        <div class="read-more" id="readMore"><p>Read more...</p></div>
+        <div class="read-more" id="readMoreMedicamentum"><p>Read more...</p></div>
         <p id="medicamentum2">
           During my first technical internship as a Computer Engineering student, 
           I had the opportunity to work on this application and collaborate with the team of Beyowi 
@@ -115,17 +114,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </div>
     <!-- EDURELL -->
     <div class="w3-third w3-container w3-margin-bottom">
-      <!-- <a href="edurell.html"> -->
-        <img src="edurell.PNG" alt="Edurell" style="width:100%">
-      <!-- </a> -->
+      <img src="edurell.PNG" alt="Edurell" style="width:100%">
       <div class="w3-container w3-white">
         <h4><b>Full-stack development for Edurell</b></h4>
         <h6><i>School project for the University of Genoa, Italy (6 months)</i></h6>
         <p>
           Edurell is an interactive platform dedicated to distance learning. 
           The aim of the platform is to facilitate the understanding and assimilation through video augmentation and graph visualisation.
-          Other features have been developed to make learning more enjoyable...
+          Other features have been developed to make learning more enjoyable.
         </p>
+        <div class="read-more" id="readMoreEdurellDesc"><p>Read more...</p></div>
+        <p id="edurellDesc">
+          As a pair with another student from my university we had the opportunity to develop this web application for an Associate Professor and her PhD student 
+          at the University of Genoa (UNIGE), Italy. We first started to discuss the requirements all together and then we came up with the User Requirements Specification Document. 
+          Once each participants agreed on the requirements satisfy and the features to develop, we started our work. We used ReactJS for the front-end part and Flask for the back-end part. 
+          Through weekly meetings with the client we discussed the tasks achieved the past week and suggested new features that might have improved the application. 
+        </p>
+        <div class="read-more" id="readMoreEdurellFeatures"><p>Show the main features</p></div>
+        <div id="edurellFeatures">
+          <p>
+            The main features that are available on the platform are:
+            <ul>
+              <li>A dashboard with the history of the lessons watched online</li>
+              <li>A semantic graph available and animated next to the video to understand better the links between each concepts</li>
+              <li>A synchronized transcript of the video</li>
+              <li>The fragment navigation with the progress bar for each of them</li>
+              <li>The possibility to take notes and save them automatically</li>
+              <li>A user management system (registration, login, account deletion and modification)</li>
+            </ul>
+          </p>
+        </div>
         Team: <i class="fa fa-user fa-fw"></i><i class="fa fa-user fa-fw"></i>
         <img class="logo-react" src="react.svg.png" alt="react"/>
         <img class="logo" src="flask.png" alt="flask" width="100px"/>
@@ -301,12 +319,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   $(document).ready(function(){
       $("#medicamentum2").hide();
       $("#medicamentum3").hide();
+      $("#edurellDesc").hide();
+      $("#readMoreEdurellFeatures").hide()
+      $("#edurellFeatures").hide();
   });
 
-  $("#readMore").click(function(){
+  $("#readMoreMedicamentum").click(function(){
     $("#medicamentum2").show();
     $("#medicamentum3").show();
-    $("#readMore").hide()
+    $("#readMoreMedicamentum").hide()
+  });
+
+  $("#readMoreEdurellDesc").click(function(){
+    $("#edurellDesc").show();
+    $("#readMoreEdurellDesc").hide()
+    $("#readMoreEdurellFeatures").show()
+  });
+
+  $("#readMoreEdurellFeatures").click(function(){
+    $("#edurellFeatures").show();
+    $("#readMoreEdurellFeatures").hide()
   });
 // Script to open and close sidebar
 function w3_open() {
